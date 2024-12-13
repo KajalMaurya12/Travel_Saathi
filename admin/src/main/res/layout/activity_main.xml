@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addMenu"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="314dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginBottom="366dp"
+        android:background="@color/lightBlue"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="67dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/baseline_control_point_24" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="136dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="65dp"
+            android:text="Add Menu"
+            android:textSize="25dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/AllItemMenu"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="487dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="193dp"
+        android:background="@color/black"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/baseline_remove_red_eye_24" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="65dp"
+            android:text="All Item Menu"
+            android:textSize="25dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="609dp"
+        android:text="Admin Panel"
+        android:textSize="45dp" />
+
+</RelativeLayout>

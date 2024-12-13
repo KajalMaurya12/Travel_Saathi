@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- TextView positioned at the top of the layout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Offer"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:textSize="20dp" />
+
+    <!-- MaterialCardView positioned below the TextView -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <!-- ImageView inside MaterialCardView -->
+        <ImageView
+            android:id="@+id/bannerIv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img" />
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

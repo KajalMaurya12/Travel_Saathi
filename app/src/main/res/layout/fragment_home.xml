@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+android:background="@drawable/app_bg">
+
+<FrameLayout
+    android:id="@+id/bottom_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/curv">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="288dp"
+                    android:layout_height="202dp"
+                    android:src="@drawable/img_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="50dp"
+                    android:layout_marginStart="48dp"
+                    android:padding="10dp"
+                    android:text="Get Offer Now"
+                    android:textAlignment="gravity"
+                    android:textColor="#C315E0"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:text="Limited Time Offer"
+                    android:textAlignment="gravity"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.651"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="50% OFF"
+                    android:textAlignment="gravity"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView"
+                    app:layout_constraintVertical_bias="0.718"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:elevation="3dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="99dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/app_bg"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/imghotel"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/img_6" />
+
+                        <TextView
+                            android:id="@+id/txthotel"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Hotel"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="99dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/app_bg"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/imgflights"
+                            android:layout_width="match_parent"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/img_10" />
+
+                        <TextView
+                            android:id="@+id/txtflights"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Flights"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="99dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/app_bg"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/imgtrain"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/img_8" />
+
+                        <TextView
+                            android:id="@+id/txttrain"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Train"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="99dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/app_bg"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/imgtransfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/img_11" />
+
+                        <TextView
+                            android:id="@+id/txttransfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Airport Cabs"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="99dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/app_bg"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgcarrental"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/img_12" />
+
+                        <TextView
+                            android:id="@+id/txtcarrental"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Car Rentals"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="99dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/app_bg"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/imgfph"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/img_14" />
+
+                        <TextView
+                            android:id="@+id/txtfph"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Flight+Hotel"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/app_bg"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imgstay"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/img_15" />
+
+                    <TextView
+                        android:id="@+id/txtstay"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Hourly Stays"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/app_bg"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imgcab"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/img_9" />
+
+                    <TextView
+                        android:id="@+id/txtcab"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Cab"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+
+<com.google.android.material.bottomappbar.BottomAppBar
+    android:id="@+id/bottomAppBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:backgroundTint="@color/backgroundColor"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp"
+    app:fabCradleMargin="10dp"
+    app:fabCradleRoundedCornerRadius="20dp"
+    app:fabAlignmentMode="center">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundTint="@android:color/transparent"
+        app:elevation="0dp"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</com.google.android.material.bottomappbar.BottomAppBar>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
